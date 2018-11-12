@@ -1,0 +1,9 @@
+  version: "3"
+  services:
+    kettle-etl:
+      image: pumbaapeng/kettle-etl:latest
+      networks:
+        - xxlnet
+      command: ["/opt/data-integration/script.sh", "Job.kjb"]
+  networks:
+    xxlnet:
