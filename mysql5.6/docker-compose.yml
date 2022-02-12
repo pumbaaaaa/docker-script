@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.6
+    container_name: mysql5.6
+    volumes:
+      - /Users/pumbaa/Developer/docker/data/mysql5.6:/var/lib/mysql/
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
